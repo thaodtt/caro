@@ -2,7 +2,7 @@ import Square from "./Square";
 import { useState } from 'react';
 
 export default function Board() {
-    const m=15, n=20;
+    const m=15, n=15;
     const numConsecutiveToWin=5;
     const [squares, setSquares] = useState(Array(m*n).fill(null));
     const [xIsNext, setXIsNext] = useState(true);
